@@ -93,7 +93,7 @@ extern "C"
         
         // cout <<  "done\n";
 
-        sparesify(a, m, k, lda, CSCVal, CSCRowIndex, CSCColPtr, nnz);
+        sparesifyCSC(a, m, k, lda, CSCVal, CSCRowIndex, CSCColPtr, nnz);
 
         cout << "Matrix size: \n";
         cout << "A: sparse matrix, " << M << " x " << K << ". NNZ = " << nnz <<  "\n";
