@@ -11,7 +11,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -Wno-write-strings")
 find_package(TAPA REQUIRED)
 find_package(SDx REQUIRED)
 
-add_executable(sextans)
+add_library(sextans SHARED)
 target_sources(sextans PRIVATE src/sextans-host.cpp src/sextans.cpp)
 target_link_libraries(sextans PRIVATE tapa::tapa)
 
