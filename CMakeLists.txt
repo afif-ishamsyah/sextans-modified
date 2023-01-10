@@ -15,6 +15,7 @@ add_library(sextans SHARED)
 target_sources(sextans PRIVATE src/sextans-host.cpp src/sextans.cpp)
 set_property(TARGET sextans PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_link_libraries(sextans PRIVATE tapa::tapa)
+set_property(TARGET tapa::tapa PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 add_tapa_target(
   hls
